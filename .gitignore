@@ -1,2 +1,4 @@
 /__MACOSX
 /Isomorphic - React*
+/node_modules
+package-lock.json
