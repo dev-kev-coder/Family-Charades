@@ -1,13 +1,18 @@
 const style = {
     centerParent: {
-        backgroundColor: "black",
-        height: "100vh",
-        width: "100%",
+        // backgroundColor: 'black',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100%',
     },
 
     centerChild: {
-        backgroundColor: "red"
-    }
-}
+        backgroundColor: 'red',
+        padding: '10em',
+        width: '50em',
+    },
+};
 
 export default style;
