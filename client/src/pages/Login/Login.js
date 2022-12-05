@@ -6,7 +6,7 @@ import style from './Login.css.js';
 const Login = () => {
     return (
         <main style={style.centerParent}>
-            <Form style={style.centerChild}>
+            <Form className="d-flex align-items-center justify-content-center">
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
