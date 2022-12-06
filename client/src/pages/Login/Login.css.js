@@ -1,6 +1,5 @@
 const style = {
     centerParent: {
-        // backgroundColor: 'black',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -9,9 +8,8 @@ const style = {
     },
 
     centerChild: {
-        backgroundColor: 'red',
-        padding: '10em',
-        width: '50em',
+        padding: '8em',
+        width: '40em',
     },
 };
 

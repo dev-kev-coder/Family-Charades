@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 // Import pages for application
 import Login from './pages/Login/Login.js';
-import Home from './pages/Home.js';
+import Home from './pages/Home/Home.js';
 
 const App = () => {
 	return (
