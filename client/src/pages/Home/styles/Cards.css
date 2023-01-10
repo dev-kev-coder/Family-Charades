@@ -1,0 +1,31 @@
+:root {
+    --card-color: #ffddbe;
+    --glow-color: #B1EDE8;
+    --words-color: #e21f33;
+    --background-color: #352D39;
+}
+
+.main-homepage {
+    padding: 5em;
+}
+.main-heading {
+    text-align: center;
+}
+
+.main-heading, .main-homepage {
+    color: var(--words-color);
+}
+
+.initial-create-card, .category-card {
+    width: 250px;
+    height: 150px;
+    background-color: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+/* .category-cards {
+    
+} */
