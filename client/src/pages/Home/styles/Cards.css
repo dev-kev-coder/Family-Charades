@@ -16,6 +16,13 @@
     color: var(--words-color);
 }
 
+.category-card:hover,.initial-create-card:hover {
+    box-shadow: 0px 5px 10px 5px var(--glow-color);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 500ms;
+}
+
 .initial-create-card, .category-card {
     width: 250px;
     height: 150px;
@@ -24,6 +31,8 @@
     align-items: center;
     justify-content: center;
     margin: 2em;
+    transition-duration: 500ms;
+
 }
 
 /* .category-cards {
