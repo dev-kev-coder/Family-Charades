@@ -1,28 +1,42 @@
+// Bootstrap Components
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Col from 'react-bootstrap/Col';
+
+// Custom Components
 import Cards from './components/Card/Cards.js';
+import CreateCategoryCard from './components/Card/CreateCategoryCard.js';
+
+// Data for application
 import data from '../../utils/db.json';
 
 import './styles/Cards.css';
 
+const onClickHandlers = {
+	createNewCategory: () => {
+		// Will need to route is to a form which will create at category card for the game
+		console.log('Taking you to create page');
+	},
+	selectCategory: () => {
+		console.log('Selecting Category');
+	},
+};
+
 const Home = () => {
 	return (
-		// To-do: We will need to generate a series of cards.
-		// We will map through a data set that is retrive by and API call
-		// Default value is an empty array
-
-		// We will constantly have a default "Create New Deck Card" that will be
 		<>
 			<main>
 				<h1 className="main-heading">Family Charades!</h1>
 				<section className="main-homepage">
 					<Row>
-						<Col lg="3">
-							<div className="initial-create-card">
-								<h1>Testds</h1>
-							</div>
-						</Col>
-						<Cards categories={data} />
+						<CreateCategoryCard
+							createNewCategory={
+								onClickHandlers.createNewCategory
+							}
+						/>
+						<Cards
+							selectCategory={onClickHandlers.selectCategory}
+							categories={data}
+						/>
 					</Row>
 				</section>
 			</main>
